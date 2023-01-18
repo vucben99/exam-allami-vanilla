@@ -49,3 +49,12 @@ const magazines = {
 const root = document.getElementById("root")
 const main = document.getElementById("main")
 
+for (let card of magazines.cards) {
+    main.innerHTML += `
+        <section class="card">
+            <h1>${card.title}</h1>
+            <p>${card.text}</p>
+        </section>
+    `
+}
+
