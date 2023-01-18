@@ -52,8 +52,10 @@ const main = document.getElementById("main")
 for (let card of magazines.cards) {
     main.innerHTML += `
         <section class="card">
+            <div class="price">$ ${card.sub} / YEAR</div>
             <h1>${card.title}</h1>
             <p>${card.text}</p>
+            <button class="sub">Subscribe here</button>
         </section>
     `
 }
