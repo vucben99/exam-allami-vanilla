@@ -1,3 +1,43 @@
+:root {
+    --clr-primary: #fff257;
+    --clr-secondary: #33793f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    color: red;
+    margin: 0;
+    background-color: var(--clr-primary);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif
+}
+
+p {
+    font-family: "Roboto", sans-serif
+}
+
+#root {
+    display: flex;
+}
+
+#header {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: var(--clr-secondary);
+
+    height: 100vh;
+    position: fixed;
+}
+
+#main {
+    display: flex;
+
+    color: var(--clr-secondary);
 }
